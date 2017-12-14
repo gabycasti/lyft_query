@@ -10,6 +10,7 @@ var aleatorio
 $("#telefono").keydown(function(){	
 var min_length = 10;
 var length = $("#telefono").val().length;
+
 if (length > min_length) {
   $('#boton_next').attr('disabled', false);
 
@@ -19,12 +20,20 @@ if (length > min_length) {
 
 })	
 
+/* Función para limpiar el campo */
+$('#boton_next2').click(function(){
+  $("#telefono").val('');
+
+})
+
 /* Función para crear números aleatorios */
 $("#boton_next").click(function(){
   var limite = 100;
   aleatorio = Math.floor(Math.random()*limite);
   alert("Su código es:Lab-" +aleatorio);
+  $("#myModal").hide();
   $('#myModal2').show();
+
 
 })
   
@@ -40,8 +49,24 @@ $("#boton_next").click(function(){
   })
 
   $("#boton_next3").click(function(){
-    $("#mymodal2").hide();
+    $("#myModal2").hide();
   })
+
+  $("#boton_next2").click(function(){
+    //$("#myModal").show();
+    $("#myModal2").hide();
+
+  })
+
+
+  $("#formulario").change(function () {  
+    if($("#name").val().length < 1) {    
+        name_vacio = false;  
+    }  
+    return false;
+
+
+});  
 
 
 });
