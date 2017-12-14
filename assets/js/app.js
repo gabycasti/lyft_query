@@ -2,7 +2,16 @@
 $(document).ready(function(){
 // función para validar espacios vacios
 function validar() {
-     if ($('#name').val() != "" && $('#email').val() != "");
+     if ($('#name').val() != "" && $('#email').val() != ""){
+      $('#boton_next4').attr('disabled', false);
+      console.log('false')
+
+}     else {
+
+      $('#boton_next4').attr('disabled', true);
+      console.log('true')
+}
+
 };
 
 /* Validar campo que sea solo números */
@@ -66,7 +75,16 @@ $("#boton_next").click(function(){
     }
   });
 
+ /* Validar que los campos no estana vacios para habilitar el boton */
+ $("#name").keyup(function(){
+   validar();
+   
+ });
 
+ $("#mail").keyup(function(){
+   validar();
+   
+ });
 
   /*Cambiar el color cuando el focus esta en el input */
   $("#telefono").focusin(function(){
@@ -86,7 +104,7 @@ $("#boton_next").click(function(){
   });
 
 
-
+//Ocultar el modal 2
   $("#boton_next3").click(function(){
     $("#myModal2").hide();
   });
@@ -95,6 +113,12 @@ $("#boton_next").click(function(){
     //$("#myModal").show();
     $("#myModal2").hide();
 
+  });
+
+
+  $("#boton_next4").click(function(){
+    $("#myModal3").modal('hide');
+    $(".finalizar").attr("display","block");
   });
 
  

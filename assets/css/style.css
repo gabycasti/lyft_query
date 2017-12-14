@@ -67,6 +67,19 @@ hr{
   background:#cccccc;
 }
 
+.finalizar{
+  width: 100%;
+  height: 700px;
+  background-color:#ab0374;
+  display: none;
+
+}
+
+#imagen_fin{
+	width: 200px;
+	height: 200px;
+}
+
 #prioridad{
 	width: 80px;
 	height: 40px;
