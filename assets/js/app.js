@@ -1,7 +1,10 @@
 /* función splash  */
 $(document).ready(function(){
+// función para validar espacios vacios
+function validar() {
+     if ($('#name').val() != "" && $('#email').val() != "");
+};
 
-var aleatorio
 /* Validar campo que sea solo números */
  $('#telefono').validCampoFranz('0123456789');
  
@@ -48,25 +51,63 @@ $("#boton_next").click(function(){
     	} 
   })
 
+
+ /* manda mensaje cuando el focus esta en el input*/
+  $("#name").focusout(function(){
+    if($(this).val() === ""){
+      $("#name_vacio").html("<span style='colo:blue;'>Debe ingresar un nombre</span>");
+    }
+  });
+
+  /* manda mensaje cuando el focus esta en el input*/
+  $("#mail").focusout(function(){
+    if($(this).val() === ""){
+      $("#email_vacio").html("<span style='colo:blue;'>Debe ingresar un email</span>");
+    }
+  });
+
+
+
+  /*Cambiar el color cuando el focus esta en el input */
+  $("#telefono").focusin(function(){
+   $(this).addClass("miClase");
+      
+  });
+
+
+  $("#name").focusin(function(){
+   $(this).addClass("miClase");
+      
+  });
+
+  $("#mail").focusin(function(){
+   $(this).addClass("miClase");
+      
+  });
+
+
+
   $("#boton_next3").click(function(){
     $("#myModal2").hide();
-  })
+  });
 
   $("#boton_next2").click(function(){
     //$("#myModal").show();
     $("#myModal2").hide();
 
-  })
+  });
+
+ 
+  $("#box").click(function(){
+    $(this).prop('checked', true)
+  });
 
 
-  $("#formulario").change(function () {  
-    if($("#name").val().length < 1) {    
-        name_vacio = false;  
-    }  
-    return false;
+       
 
+       
 
-});  
+ 
 
 
 });

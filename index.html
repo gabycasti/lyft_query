@@ -22,7 +22,7 @@
       <img class="logo_blanco" src="assets/img/logo-white.png" alt="">
     </div>
 
-
+ <!-- principal -->
     <section class="container-fluid">
       <div class="row">
         <div class="col-xs-12 principal text-center">
@@ -200,19 +200,22 @@
                 <form  id="formulario" action="/my-handling-form-page" method="post">
                   <div class="col-xs-12 text-center">
                     <label for="name"></label>
-                    <input type="text" placeholder="First Name  Last Name" id="name" />
+                    <input type="text" placeholder="First Name  Last Name" id="name"/>
+                    <span id="name_vacio"></span>
                   </div>
                   <div class="col-xs-12 text-center">
                     <label for="mail"></label>
-                    <input type="email" placeholder="email" id="mail" />
+                    <input type="email" placeholder="email" id="mail"/>
+                    <span id="email_vacio"></span>
                   </div>
                 
                   <div class="col-xs-12 text-center">
-                    <label><input type="checkbox" id="cbox1" value="first_checkbox"> I gree to Lyft'ss Terms of service</label>
+                    <label><input type="checkbox" id="box" value="first_checkbox"> I gree to Lyft'ss Terms of service</label>
                   </div>
+
     
                   <div class="col-xs-12 button text-center">
-                    <button id="boton_next4" class="btn btn-danger"  type="submit">Send your message</button>
+                    <button id="boton_next4" disabled="" class="btn btn-danger"  type="submit">Send your message</button>
                   </div>
                 </form>
               </div>
