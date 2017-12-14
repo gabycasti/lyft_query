@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurantes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+  
+  <!-- splash -->
+  <body onload="splash(3000)">
+    <div id="splashscreen">
+      <img class="logo_blanco" src="assets/img/logo-white.png" alt="">
+    </div>
+
+
+    <section class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 principal text-center">
+          <img class="logo_dos" src="assets/img/logo-white.png" alt="">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 secundario text-center">
+          <img class="logo_tres" src="assets/img/logo-pink.png" alt="">
+        </div>
+      </div> 
+
+      <div class="row">
+        <div class="col-xs-6">
+          <button  data-toggle="modal" data-target="#myModal" class="boton_in btn btn-default btn-xs" type="button">LOG IN</button>
+        </div>
+
+
+        <div class="col-xs-6">
+          <button class="boton_up" type="button" class="btn btn-default btn-xs">SING UP</button>
+        </div>
+      </div>
+        
+      
+      
+    </section>
+
+  <!-- Modal ingresar telefono -->
+<div class="container">
+  <div class="row">  
+    <div id="myModal" class="modal fade in">
+        <div class="modal-dialog">
+            <div class="modal-content">
+ 
+                <div class="col-xs-12">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Sing Up</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="modal-body text-center">
+                      <h4>join now for free ride credit</h4>
+                   </div>
+                 </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-6">
+                    <select id="prioridad" name="prioridad" class="form-control my-select" style="cursor: pointer;" > 
+                    <option value="1" data-img-src="assets/image/icono.png">BANDERA 1</option>
+                   </select>
+                  </div>
+                  
+                 
+                  <div class="col-xs-6">
+                    <input id="telefono" type="text" size="15">
+                  </div> 
+                </div>
+
+               
+
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button id="boton_next" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Next</button>
+                        
+                    </div>
+                </div>
+ 
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dalog -->
+    </div><!-- /.modal -->
+  </div>
+</div>
+
+  
+  <!-- Modal ingresar codigo -->
+<div class="container">
+  <div class="row">  
+    <div id="myModal2" class="modal fade in">
+        <div class="modal-dialog">
+            <div class="modal-content">
+ 
+                <div class="col-xs-12">
+                    <div class="modal-header">
+                      <h2 class="modal-title">Verifique phone number</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="modal-body text-center">
+                      <h4>join now for free ride credit</h4>
+                   </div>
+                 </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">      
+                 
+                  <div class="col-xs-6">
+                    <input id="codigo_al" type="text" size="15">
+                  </div> 
+                </div>
+
+               
+
+                <div class="modal-footer">
+                    <div class="btn-group">
+                        <button id="boton_next2" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Resend Code</button>  
+                    </div>
+
+                     <div class="btn-group">
+                        <button id="boton_next3" class="btn btn-danger" disabled="" data-toggle="modal" data-target="#myModal3" class="boton_in btn btn-default btn-xs" type="button"><span class="glyphicon glyphicon-remove"></span> Next</button>  
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dalog -->
+    </div><!-- /.modal -->
+
+
+  </div>
+</div>
+
+ 
+ <!-- Modal ingresar Datos -->
+<div class="container">
+  <div class="row">  
+    <div id="myModal3" class="modal fade in">
+        <div class="modal-dialog">
+            <div class="modal-content">
+ 
+                <div class="col-xs-12">
+                    <div class="modal-header">
+                      <h2 class="modal-title">Sing Up</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="modal-body text-center">
+                      <h4>join now for free ride credit</h4>
+                   </div>
+                 </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+
+                <div class="row">      
+                 
+                  <div class="col-xs-6">
+                    <input id="codigo_al" type="text" size="15">
+                  </div> 
+                </div>
+
+               
+
+               <form action="/my-handling-form-page" method="post">
+                <div>
+                  <label for="name">First Name:</label>
+                  <input type="text" id="name" />
+                </div>
+                <div>
+                  <label for="mail">E-mail:</label>
+                  <input type="email" id="mail" />
+                </div>
+                <div>
+                  <label for="msg">Message:</label>
+                  <textarea id="msg"></textarea>
+                </div>
+                <div>
+                <label><input type="checkbox" id="cbox1" value="first_checkbox"> I gree to Lyft'ss Terms of service</label>
+                </div>
+    
+    <div class="button">
+        <button  type="submit">Send your message</button>
+    </div>
+</form>
+ 
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dalog -->
+    </div><!-- /.modal -->
+
+
+  </div>
+</div>
+
+ 
+
+
+  
+ 
+ 
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/d2c9b2c5c1.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/validar.js"></script>
+
+  
+</body>
+</html>
