@@ -39,7 +39,9 @@ $("#boton_next").click(function(){
     	} 
   })
 
-
+  $("#boton_next3").click(function(){
+    $("#mymodal2").hide();
+  })
 
 
 });

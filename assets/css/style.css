@@ -66,15 +66,46 @@ hr{
 #prioridad{
 	width: 80px;
 	height: 40px;
-	margin-left: 80px;
+	padding-left: 20px;
 }
 
 #telefono{
 	width: 130px;
 	height: 40px;
-	margin-right: 130px;
+	font-family: 16px;
 }
 
+#boton_next{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #AB0374;
+	width: 150px;
+}
+
+#boton_next2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #AB0374;
+	width: 120px;
+}
+
+#boton_next3{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #AB0374;
+	width: 120px;
+}
+
+#boton_next4{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #AB0374;
+	width: 150px;
+}
+
+#name{
+  margin-bottom: 20px;
+}
 /*  Modal */
 .modal .modal-header {
   border-bottom: none;
